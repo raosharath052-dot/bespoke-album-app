@@ -47,7 +47,15 @@ export function ServicesPanel() {
     toast.success("Service added.");
   };
 
-  const patch = async (id: string, values: Record<string, unknown>) => {
+  const patch = async (
+    id: string,
+    values: Partial<{
+      name: string;
+      unit_price: number;
+      category: string;
+      is_active: boolean;
+    }>,
+  ) => {
     const { error } = await supabase.from("services_cameras").update(values).eq("id", id);
     if (error) toast.error(error.message);
     else await refresh();

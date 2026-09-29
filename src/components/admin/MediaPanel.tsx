@@ -81,7 +81,15 @@ export function MediaPanel() {
     toast.success("Film added.");
   };
 
-  const patch = async (id: string, values: Record<string, unknown>) => {
+  const patch = async (
+    id: string,
+    values: Partial<{
+      title: string;
+      category: string;
+      is_hero: boolean;
+      display_order: number;
+    }>,
+  ) => {
     const { error } = await supabase.from("portfolio_media").update(values).eq("id", id);
     if (error) toast.error(error.message);
     else await refresh();

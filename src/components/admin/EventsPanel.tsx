@@ -32,7 +32,10 @@ export function EventsPanel() {
     toast.success("Event added.");
   };
 
-  const patch = async (id: string, values: Record<string, unknown>) => {
+  const patch = async (
+    id: string,
+    values: Partial<{ name: string; is_active: boolean; display_order: number }>,
+  ) => {
     const { error } = await supabase.from("event_types").update(values).eq("id", id);
     if (error) toast.error(error.message);
     else await refresh();

@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Brand identity uses “Parinayam Weddings” in code fallbacks and route metadata so initial renders never expose a previous name.

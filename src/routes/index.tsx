@@ -10,22 +10,26 @@ import { useSettings } from "@/lib/studio";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "THE BIG DAY by chai — Editorial Wedding Photography & Films" },
+      { title: "Parinayam Weddings | Luxury Candid Wedding Photography" },
       {
         name: "description",
         content:
-          "A boutique wedding studio documenting Indian weddings with an editorial, unhurried eye. Build your investment event by event and reserve your date.",
+          "Parinayam Weddings documents Indian celebrations through luxury candid wedding photography and cinematic films.",
       },
       {
         property: "og:title",
-        content: "THE BIG DAY by chai — Editorial Wedding Photography & Films",
+        content: "Parinayam Weddings | Luxury Candid Wedding Photography",
       },
       {
         property: "og:description",
         content:
-          "Timeless wedding photographs and films. Build a granular, event-by-event quote in minutes.",
+          "Luxury candid wedding photography and cinematic films, crafted with an editorial and unhurried eye.",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://bespoke-album-app.lovable.app/" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://bespoke-album-app.lovable.app/" }],
   }),
   component: Home,
 });

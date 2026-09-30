@@ -19,11 +19,13 @@ export const Route = createFileRoute("/admin")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Studio Dashboard" },
-      { name: "description", content: "Private studio dashboard." },
+      { title: "Studio Dashboard | Parinayam Weddings" },
+      { name: "description", content: "Private Parinayam Weddings studio dashboard." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Studio Dashboard" },
-      { property: "og:description", content: "Private studio dashboard." },
+      { property: "og:title", content: "Studio Dashboard | Parinayam Weddings" },
+      { property: "og:description", content: "Private Parinayam Weddings studio dashboard." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: AdminPage,

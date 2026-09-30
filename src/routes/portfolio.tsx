@@ -7,17 +7,23 @@ import { Navbar } from "@/components/site/Navbar";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Weddings, Pre-Weddings & Films" },
+      { title: "Wedding Portfolio | Parinayam Weddings" },
       {
         name: "description",
         content:
-          "Browse our editorial wedding photographs, pre-wedding portraits and cinematic wedding films.",
+          "Explore luxury candid wedding photography, pre-wedding portraits and cinematic films by Parinayam Weddings.",
       },
-      { property: "og:title", content: "Portfolio — Weddings, Pre-Weddings & Films" },
+      { property: "og:title", content: "Wedding Portfolio | Parinayam Weddings" },
       {
         property: "og:description",
-        content: "Editorial wedding photographs, pre-wedding portraits and cinematic films.",
+        content: "Luxury candid wedding photographs, pre-wedding portraits and cinematic films by Parinayam Weddings.",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://bespoke-album-app.lovable.app/portfolio" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://bespoke-album-app.lovable.app/portfolio" },
     ],
   }),
   component: PortfolioPage,

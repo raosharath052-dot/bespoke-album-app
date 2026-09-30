@@ -7,18 +7,25 @@ import { QuoteBuilder } from "@/components/site/QuoteBuilder";
 export const Route = createFileRoute("/quote")({
   head: () => ({
     meta: [
-      { title: "Build Your Investment — Wedding Quote Calculator" },
+      { title: "Build Your Wedding Photography Quote | Parinayam Weddings" },
       {
         name: "description",
         content:
-          "Add each wedding function, pick your cameras and crew, and see a live estimate. Submit to check your date on WhatsApp.",
+          "Build a tailored Parinayam Weddings photography and film estimate for every celebration, then check your date on WhatsApp.",
       },
-      { property: "og:title", content: "Build Your Investment — Wedding Quote Calculator" },
+      {
+        property: "og:title",
+        content: "Build Your Wedding Photography Quote | Parinayam Weddings",
+      },
       {
         property: "og:description",
-        content: "A granular, event-by-event wedding photography quote builder with live pricing.",
+        content: "Create a tailored event-by-event wedding photography and film estimate with Parinayam Weddings.",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://bespoke-album-app.lovable.app/quote" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://bespoke-album-app.lovable.app/quote" }],
   }),
   component: QuotePage,
 });

@@ -1,0 +1,1 @@
+ALTER TABLE public.site_settings ALTER COLUMN studio_name SET DEFAULT 'Parinayam Weddings';

@@ -78,13 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "THE BIG DAY by chai — Wedding Photography & Films" },
+      { title: "Parinayam Weddings | Luxury Candid Wedding Photography" },
       {
         name: "description",
         content:
-          "Editorial wedding photography and films. Build your event-by-event investment and reserve your date.",
+          "Parinayam Weddings creates luxury candid wedding photography and cinematic films for celebrations across India.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Parinayam Weddings" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -98,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,

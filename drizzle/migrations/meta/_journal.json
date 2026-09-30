@@ -15,6 +15,13 @@
       "when": 1790710729064,
       "tag": "0001_portfolio_storage_policies",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1790742074746,
+      "tag": "0002_rename_studio_default_to_parinayam",
+      "breakpoints": true
     }
   ]
 }

@@ -72,7 +72,7 @@ export const SLOTS = ["Morning", "Evening", "Full Day"] as const;
 
 export const FALLBACK_SETTINGS: SiteSettings = {
   id: "fallback",
-  studio_name: "THE BIG DAY by chai",
+  studio_name: "Parinayam Weddings",
   tagline: "Wedding stories told with quiet elegance",
   bio: "We are a boutique wedding studio documenting Indian weddings with an editorial, unhurried eye. Every frame is crafted to feel like a memory, not a pose.",
   logo_url: null,

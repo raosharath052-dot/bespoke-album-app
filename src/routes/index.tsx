@@ -18,16 +18,34 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Parinayam Weddings | Luxury Candid Wedding Photography",
+        content: "Parinayam Weddings | Luxury Candid Wedding Photography & Films",
       },
       {
         property: "og:description",
         content:
-          "Luxury candid wedding photography and cinematic films, crafted with an editorial and unhurried eye.",
+          "Timeless wedding stories captured with pure candid emotion. Based in India & Available Worldwide.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://bespoke-album-app.lovable.app/" },
+      {
+        property: "og:image",
+        content: "https://bespoke-album-app.lovable.app/og-image.jpg",
+      },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "Parinayam Weddings | Luxury Candid Wedding Photography & Films",
+      },
+      {
+        name: "twitter:description",
+        content: "Timeless wedding stories captured with pure candid emotion.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://bespoke-album-app.lovable.app/og-image.jpg",
+      },
     ],
     links: [{ rel: "canonical", href: "https://bespoke-album-app.lovable.app/" }],
   }),
